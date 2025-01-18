@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+      // 対象とするECMAScriptバージョン
+      "target": "ES5", 
+      // 使うライブラリ。DOM操作/最新のES機能等を型定義に含める
+      "lib": ["dom", "dom.iterable", "esnext"],
+      // JavaScript を一緒にコンパイル対象に含めるかどうか
+      // JSとTSが混在する場合は true、全てTSにするなら false
+      "allowJs": false,
+  
+      // 型定義をすべてチェックしない (パフォーマンス向上)
+      "skipLibCheck": true,
+  
+      // 厳密モード。エラーを厳しくチェックしたいなら true (推奨)
+      "strict": true,
+  
+      // Windows / Mac / Linux で大文字・小文字の不一致をエラーにする
+      "forceConsistentCasingInFileNames": true,
+  
+      // コンパイルで出力ファイルを作らない (CRA では Babel が担当)
+      "noEmit": true,
+  
+      // モジュール解決設定。CRA は "node" を期待している
+      "moduleResolution": "node",
+  
+      // import 文を使う際に必要
+      "esModuleInterop": true,
+  
+      // JSXの変換方法: CRAは "react-jsx" が推奨 (React17+)
+      // React16など古いバージョンを使う場合は "react"
+      "jsx": "react-jsx",
+      
+      // 末尾にカンマがあるオブジェクトなどを許可するか (お好みで)
+      // "allowTrailingComma": true, // TS4.8～では非推奨
+    },
+    // src フォルダ内のみをコンパイル対象に含める
+    "include": ["src"]
+  }
+  
